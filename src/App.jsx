@@ -81,18 +81,18 @@ function App() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-900 to-purple-900 flex items-center justify-center">
-        <div className="text-white text-xl">加载中...</div>
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-gray-800 text-xl">加载中...</div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 to-purple-900">
+    <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <header className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">🍅 PomoFlow</h1>
-          <p className="text-blue-200 text-lg">番茄工作法效率工具</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">🍅 PomoFlow</h1>
+          <p className="text-gray-600 text-lg">番茄工作法效率工具</p>
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -121,7 +121,7 @@ function App() {
             ) : (
               <button
                 onClick={() => setShowStats(true)}
-                className="w-full bg-white hover:bg-gray-100 text-gray-800 font-bold py-3 px-6 rounded-lg shadow-lg transition-colors"
+                className="w-full bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-colors"
               >
                 📊 查看统计
               </button>
@@ -129,7 +129,7 @@ function App() {
           </div>
         </div>
 
-        <footer className="text-center mt-8 text-blue-200 text-sm">
+        <footer className="text-center mt-8 text-gray-500 text-sm">
           <p>使用番茄工作法提升效率 · 专注当下，成就未来</p>
         </footer>
       </div>

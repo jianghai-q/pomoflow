@@ -1,4 +1,3 @@
-import React from 'react';
 import TaskItem from './TaskItem';
 
 const TaskList = ({ tasks, activeTasks, completedTasks, onDeleteTask, onSelectTask, selectedTaskId }) => {
@@ -15,7 +14,7 @@ const TaskList = ({ tasks, activeTasks, completedTasks, onDeleteTask, onSelectTa
     <div className="space-y-6">
       {activeTasks.length > 0 && (
         <div>
-          <h2 className="text-xl font-bold text-white mb-4">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">
             进行中 ({activeTasks.length})
           </h2>
           <div className="space-y-3">
@@ -34,7 +33,7 @@ const TaskList = ({ tasks, activeTasks, completedTasks, onDeleteTask, onSelectTa
 
       {completedTasks.length > 0 && (
         <div>
-          <h2 className="text-xl font-bold text-white mb-4">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">
             已完成 ({completedTasks.length})
           </h2>
           <div className="space-y-3">
